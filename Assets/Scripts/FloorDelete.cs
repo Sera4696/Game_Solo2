@@ -18,11 +18,10 @@ public class FloorDelete : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Floor")
+        if (other.gameObject.tag == "Floor" || other.gameObject.tag == "BF" || other.gameObject.tag == "RF")
         {
             Debug.Log("通り抜け終えた");
             Destroy(other.gameObject);
-        }
-       
+        }       
     }
 }
