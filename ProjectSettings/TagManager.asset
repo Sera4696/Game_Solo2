@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Floor
+  - FR
+  - FB
+  - FG
+  - FY
   layers:
   - Default
   - TransparentFX

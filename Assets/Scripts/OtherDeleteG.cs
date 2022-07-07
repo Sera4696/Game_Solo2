@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OtherDelete : MonoBehaviour
+public class OtherDeleteG : MonoBehaviour
 {
     [SerializeField] public float speed;
     [SerializeField] public bool isFall;
@@ -22,7 +22,7 @@ public class OtherDelete : MonoBehaviour
 
     void OnCollisionExit(Collision other)
     {
-        if (other.gameObject.tag == "FR")
+        if (other.gameObject.tag == "FG")
         {
             Debug.Log("離れた!");
             isFall = true;
