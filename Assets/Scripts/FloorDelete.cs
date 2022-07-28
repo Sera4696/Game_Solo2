@@ -42,6 +42,7 @@ public class FloorDelete : MonoBehaviour
         if(transform.position.y < -2.5f)
         {
             Debug.Log("死");
+            Player.ScoreCount += 1;
             Destroy(gameObject);
         }
     }

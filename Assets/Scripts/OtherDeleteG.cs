@@ -9,7 +9,7 @@ public class OtherDeleteG : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed = 0.05f;
+        speed = 0.18f;
         isFall = false;
     }
 
@@ -17,7 +17,7 @@ public class OtherDeleteG : MonoBehaviour
     void Update()
     {
         Fall();
-        Dead();
+        //Dead();
     }
 
     void OnCollisionExit(Collision other)

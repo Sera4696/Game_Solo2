@@ -20,9 +20,9 @@ public class InsFloor : MonoBehaviour
     {
         if (insFloor == null && insCount == 3)
         {
-            floorCount = Random.Range(0, 4);
-            insFloor = Instantiate(preFloors[floorCount], transform.position, Quaternion.identity);
             insCount = 0;
+            floorCount = Random.Range(0, 4);
+            insFloor = Instantiate(preFloors[floorCount], transform.position, Quaternion.identity);            
         }
 
         if (insFloor == null &&
